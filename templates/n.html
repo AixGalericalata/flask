@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+        {% set words = ['инженер', 'строитель'] %}
+        {% if prof == 'строитель' or prof == 'инженер' %}
+            <h2>Инженерные тренажеры</h2>
+            <img src="/static/img/it.png">
+        {% else %}
+            <h2>Научные симуляторы</h2>
+            <img src="/static/img/ns.png">
+        {% endif %}
+{% endblock %}
