@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% set user_list = ['Пилот', 'Строитель', 'Врач', 'Климатолог', 'Штурман'] %}
 <h2>Список профессий</h2>
 {% if list == 'ol' %}
 <ol>
-    {% for user in user_list %}
+    {% for user in prof_list %}
     <li>{{ user }}
     </li>
     {% endfor %}
 </ol>
 {% elif list == 'ul' %}
 <ul>
-    {% for user in user_list %}
+    {% for user in prof_list %}
     <li>{{ user }}
     </li>
     {% endfor %}
