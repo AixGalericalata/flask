@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set list = ['surname', 'name', 'education', 'profession', 'sex', 'motivation', 'ready'] %}
+{% set d1ct = {'surname': 'Фамилия:', 'name': 'Имя:', 'education': 'Образование:', 'profession': 'Профессия:', 'sex': 'Пол:', 'motivation': 'Мотивация:', 'ready': 'Готовы остаться на Марсе?'} %}
+{% for i in list %}
+    <h4>{{d1ct[i]}} {{param[i]}}</h4>
+{% endfor %}
+{% endblock %}
